@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="201" viewBox="0 0 660 201">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{filter:url(#타원_302)}
+        </style>
+        <filter id="타원_302" width="660" height="201" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="25"/>
+            <feGaussianBlur result="blur" stdDeviation="15"/>
+            <feFlood flood-color="#646464" flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g class="cls-2">
+        <ellipse id="타원_302-2" cx="285" cy="55.5" class="cls-1" data-name="타원 302" rx="285" ry="55.5" transform="translate(45 20)"/>
+    </g>
+</svg>

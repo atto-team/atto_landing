@@ -1,0 +1,123 @@
+header {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: $black;
+  color: $white;
+  padding: $padding__desktop;
+
+  .title-grid {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 4.5rem;
+
+    .sub-title-grid {
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      p + p {
+        padding-left: 4px;
+      }
+    }
+
+    .main-title-grid {
+      font-size: 2.25rem;
+
+      h1 {
+        font-family: "Poppins", sans-serif;
+        text-shadow: 0 12px 14px rgba(0, 0, 0, 0.55);
+      }
+    }
+
+    .download-button-grid {
+      .download-button {
+        width: 13.75rem;
+        height: 3.25rem;
+        border: none;
+        border-radius: 0.5rem;
+        background: $red;
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        span + img {
+          padding-left: 0.5rem;
+        }
+
+        img {
+          height: 50%;
+        }
+
+        &:hover {
+          background: darken($red, 10%);
+          cursor: pointer;
+        }
+
+        &.disabled {
+          background: gray;
+          color: $black;
+        }
+      }
+    }
+  }
+  .charactor-grid {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -2.2rem;
+      z-index: 2;
+    }
+  }
+
+  @media (max-width: 380px) {
+    height: 34rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $padding__mobile;
+
+    .title-grid {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      z-index: 3;
+
+      .main-title-grid {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .sub-title-grid {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .charactor-grid {
+      width: 100%;
+      height: 6rem;
+      img {
+        position: absolute;
+        width: 100%;
+        height: 30rem;
+        top: -26rem;
+        z-index: 2;
+      }
+    }
+  }
+}

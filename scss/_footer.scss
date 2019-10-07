@@ -1,0 +1,50 @@
+footer {
+  background: $gray;
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+
+  .contect-grid {
+    padding-left: 3rem;
+    color: $darkgray;
+    p {
+      line-height: 2rem;
+    }
+
+    .sns-grid {
+      a {
+        color: $darkgray;
+        text-decoration: none;
+      }
+
+      a + a {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    height: 8rem;
+    font-size: 0.5rem;
+    .simbol-grid {
+      img {
+        width: 2rem;
+      }
+    }
+
+    .contect-grid {
+      padding-left: 2rem;
+      p {
+        line-height: 1rem;
+      }
+    }
+
+    .sns-grid {
+      font-size: 0.75rem;
+    }
+  }
+}

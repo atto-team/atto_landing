@@ -1,0 +1,380 @@
+section {
+  padding: $padding__desktop;
+
+  @media (max-width: 380px) {
+    padding: $padding__mobile;
+  }
+}
+
+.intro-grid {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  margin-bottom: 10rem;
+
+  .text-grid {
+    width: 50%;
+    padding-top: 2.5rem;
+
+    h2 {
+      font-weight: 800;
+    }
+
+    h2 + p {
+      padding-top: 1.5rem;
+    }
+    p {
+      line-height: 1.7;
+    }
+  }
+
+  .image-grid {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .arttoy {
+      position: absolute;
+      top: 6rem;
+      z-index: 3;
+    }
+    .pedestal {
+      position: absolute;
+      top: 40rem;
+    }
+  }
+
+  @media (max-width: 380px) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .text-grid {
+      width: 100%;
+      text-align: center;
+      padding-top: 2.5rem;
+    }
+
+    .image-grid {
+      width: 100%;
+      .arttoy {
+        width: 10rem;
+        top: 20rem;
+      }
+      .pedestal {
+        width: 17rem;
+      }
+    }
+  }
+}
+
+.event-introduce {
+  padding-bottom: 20rem;
+  h2 {
+    font-size: 3.75rem;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    padding-bottom: 6rem;
+
+    &:before {
+      @extend %red-dot;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    .description {
+      display: flex;
+      flex-direction: row;
+
+      .text-grid {
+        width: 30%;
+        p {
+          line-height: 1.7;
+        }
+        .title {
+          font-size: 1.5rem;
+          font-weight: 800;
+          color: $red;
+        }
+      }
+      hr {
+        width: 90%;
+        border-color: $red;
+        margin: 0.5rem 0;
+      }
+
+      .image-grid {
+        width: 70%;
+      }
+    }
+
+    .sub-description {
+      color: #303030;
+    }
+  }
+
+  @media (max-width: 380px) {
+    padding-bottom: 8rem;
+
+    h2 {
+      font-size: 2.1rem;
+      padding-bottom: 2rem;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      .description {
+        display: flex;
+        flex-direction: column;
+
+        .text-grid {
+          width: 100%;
+          margin-bottom: 3rem;
+        }
+
+        .image-grid {
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .sub-description {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.point-introduce {
+  padding-bottom: 20rem;
+  h2 {
+    font-size: 3.75rem;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    padding-bottom: 6rem;
+
+    &:before {
+      @extend %red-dot;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .circle {
+      width: 17.5rem;
+      height: 17.5rem;
+      border: 3px solid $red;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: $red;
+      }
+      p {
+        line-height: 1.7;
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    padding-bottom: 8rem;
+
+    h2 {
+      font-size: 2.1rem;
+      padding-bottom: 2rem;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      .circle + .circle {
+        margin-top: 2.5rem;
+      }
+    }
+  }
+}
+
+.nm-explain {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding: 4.2rem 16%;
+
+  .text-grid {
+    .text-box {
+      position: relative;
+      .pre-fix {
+        color: $red;
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+      .title {
+        color: #000000;
+        font-size: 3rem;
+        font-weight: 800;
+      }
+    }
+  }
+
+  &._1 {
+    .text-grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .text-box {
+        top: 6.25rem;
+        left: 12.5rem;
+      }
+    }
+    .image-grid {
+      height: 37.5rem;
+      text-align: center;
+      .mockup {
+        width: 50rem;
+        position: relative;
+      }
+      .sub {
+        width: 30rem;
+        position: relative;
+        z-index: 1;
+        top: -32rem;
+        left: 10rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      padding: 4rem 0;
+      .text-grid {
+        .text-box {
+          top: 0;
+          left: 0;
+        }
+      }
+      .image-grid {
+        height: 24rem;
+        .mockup {
+          width: 100%;
+        }
+        .sub {
+          width: 16rem;
+          top: -20rem;
+          left: 4rem;
+        }
+      }
+    }
+  }
+
+  &._2 {
+    .text-grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+
+      .text-box {
+        top: 6.25rem;
+        left: 6.5rem;
+      }
+    }
+    .image-grid {
+      text-align: center;
+      .mockup_mypage {
+        width: 50rem;
+        position: relative;
+      }
+    }
+
+    @media (max-width: 380px) {
+      padding: 4rem 0;
+      .text-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text-box {
+          top: 0;
+          left: 0;
+        }
+      }
+      .image-grid {
+        .mockup_mypage {
+          width: 100%;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  &._3 {
+    .text-grid {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .text-box {
+        top: 6.25rem;
+        left: 12.5rem;
+      }
+    }
+    .image-grid {
+      text-align: center;
+      .mockup_shop {
+        width: 50rem;
+        position: relative;
+      }
+    }
+
+    @media (max-width: 380px) {
+      padding: 4rem 0;
+      .text-grid {
+        .text-box {
+          top: 0;
+          left: 0;
+        }
+      }
+      .image-grid {
+        .mockup_shop {
+          width: 100%;
+          position: relative;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 380px) {
+    .text-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      .text-box {
+        .pre-fix {
+          font-size: 1.2rem;
+        }
+        .title {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        .description {
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="52" viewBox="0 0 56 52">
+    <defs>
+        <style>
+            .cls-1{fill:#fff}.cls-2{filter:url(#패스_1030)}.cls-3{filter:url(#패스_1951)}
+        </style>
+        <filter id="패스_1951" width="56" height="21.439" x="0" y="30.561" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="패스_1030" width="41.396" height="45.683" x="7.169" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur-2" stdDeviation="3"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="download_button" data-name="download button">
+        <g class="cls-3">
+            <path id="패스_1951-2" d="M1.724 0h34.552a1.72 1.72 0 1 1 0 3.439H1.724a1.72 1.72 0 1 1 0-3.439z" class="cls-1" data-name="패스 1951" transform="translate(9 36.56)"/>
+        </g>
+        <g class="cls-2">
+            <path id="패스_1030-2" d="M-988.063 729.971a.849.849 0 0 0 .552.2.849.849 0 0 0 .552-.2l10.917-9.371a.606.606 0 0 0 0-.948l-2.008-1.724a.875.875 0 0 0-1.1 0l-6.156 5.285v-20.059a.732.732 0 0 0-.781-.67h-2.84a.732.732 0 0 0-.781.67v20.058l-6.156-5.285a.875.875 0 0 0-1.1 0l-2.008 1.724a.606.606 0 0 0 0 .948z" class="cls-1" data-name="패스 1030" transform="translate(1015.38 -696.48)"/>
+        </g>
+    </g>
+</svg>

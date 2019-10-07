@@ -1,0 +1,11 @@
+{
+  "name": "atto-landing",
+  "version": "1.0.0",
+  "description": "landing page for nimon toy🤖",
+  "main": "index.html",
+  "author": "raina94",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
